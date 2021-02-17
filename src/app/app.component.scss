@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+.row{
+  margin: 15px;
+}
+.navbar{
+    // padding: 10px;
+    // margin: 10px;
+    height: auto;
+    overflow: hidden;
+}
+.navbar .menu{
+  float: left;
+  width: 73%;
+}
+.navbar .notification{
+  float: left;
+  width: 11%;
+}
+.navbar .photo{
+  float: left;
+  width: 13%;
+  margin: 1px;
+}
