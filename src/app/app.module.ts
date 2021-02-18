@@ -8,7 +8,8 @@ import { TitleComponent } from './title/title.component';
 import { NotificationComponent } from './notification/notification.component';
 import { PhotoComponent } from './photo/photo.component';
 import { SearchComponent } from './search/search.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +17,13 @@ import { SearchComponent } from './search/search.component';
     TitleComponent,
     NotificationComponent,
     PhotoComponent,
-    SearchComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

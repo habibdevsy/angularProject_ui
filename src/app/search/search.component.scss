@@ -3,7 +3,25 @@ input{
     height: 50px;
     font-size: 18px;
     font-family: sans-serif;
-    border-radius: 8px;
+    border-radius: 14px;
     border: 0px solid #ccc;
     background: #f7f6f6;
+}
+.btn-search{
+    position: relative;
+    left: 7%;
+    top: 45px;
+    color: hsl(0deg 0% 46%);
+}
+.voice-search{
+    position: relative;
+    left: 90%;
+    top: -39px;
+    color: #fd8d8b;
+}
+
+::placeholder{
+    position: relative;
+    left: 20%;
+    color: hsl(0deg 0% 77%);
 }
