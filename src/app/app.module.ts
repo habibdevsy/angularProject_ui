@@ -10,6 +10,7 @@ import { PhotoComponent } from './photo/photo.component';
 import { SearchComponent } from './search/search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import { SliderComponent } from './slider/slider.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import {MatIconModule} from '@angular/material/icon';
     TitleComponent,
     NotificationComponent,
     PhotoComponent,
-    SearchComponent
+    SearchComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
