@@ -1,3 +1,14 @@
 .voice-search{
-    color:hsl(240deg 1% 50%);
+    color:#9a9a9e;
+    position: relative;
+    top: 10px;
+    transform: rotate(-36deg);
+}
+span{
+    font-size: 28px;
+    color: red;
+    position: relative;
+    top: -19px;
+    left: -9px;
+    font-weight: bold;
 }
