@@ -66,12 +66,14 @@ float: left;
     font-size: 15px;
     margin-left: 5px;
     color:#fbfbfb;
+    margin-bottom: 5px;
   }
 
   .task-person-photo{
     position: relative;
-    // top: -11px;
-    left: -10%;
+    left: -5%;
+    width: 95px;
+    top: 6px;
   }
 
   .task-more{
@@ -117,4 +119,16 @@ float: left;
 
   .slide.one {
     background: #7482fb;
+}
+
+.test {
+  background: #6c79f5;
+  width: 100px;
+  position: relative;
+  left: -7px;
+  height: 49px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  top: -5px;
+  height: 40px;
 }
