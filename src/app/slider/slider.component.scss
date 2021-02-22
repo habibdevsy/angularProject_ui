@@ -16,16 +16,105 @@ float: left;
 
 .slider {
     width: 100%;
-    height: 130px;
+    height: 140px;
     display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     padding: 5px;
   }
+
   .slide {
     width: 100px;
     flex-shrink: 0;
-    border: 1px solid red;
     margin-left: 20px;
-    border-radius: 25px;
+    border-radius: 15px;
   }
+
+  .slide-content{
+    margin-top:5px;
+    margin-left: 7px;
+  }
+  
+  .task-icon{
+    background: #a5b0fb;
+    width: 28px;
+    border-radius: 5px;
+    /* margin-bottom: 5px; */
+    /* margin-top: 11px; */
+    text-align: center;
+    position: relative;
+    top: 5px;
+    left: 5px;
+  }
+
+  .task-icon > mat-icon{
+    position: relative;
+    top: 3px;
+    color:#dbe0fa;
+  }
+
+  .task-count{
+    margin-top: 15px;
+    font-size: 12px;
+    margin-left: 5px;
+    color:#fbfbfb;
+
+  }
+
+  .task-title{
+    margin-top: 1px;
+    font-size: 15px;
+    margin-left: 5px;
+    color:#fbfbfb;
+  }
+
+  .task-person-photo{
+    position: relative;
+    // top: -11px;
+    left: -10%;
+  }
+
+  .task-more{
+    background: #fbfbfb;;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  .task-more > span{
+    color: #7482fbc9;
+  }
+
+  .task-add{
+    left: 50%;
+    position: relative;
+    background: #9ea7ea;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .task-add > span{
+    border-radius: 50%;
+  }
+
+  ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+    left: -36%;
+  }
+
+  ul > li > img, ul > li > span{
+    border-radius: 50%;
+    width:20px;
+    height:20px;
+  }
+  ul > li {
+    width: 29px;
+    /* padding: 3px; */
+    margin-right: -15px;
+  }
+
+  .slide.one {
+    background: #7482fb;
+}
