@@ -192,6 +192,7 @@ float: left;
   top: 3px;
   color:#dbe0fa;
 }
+
 .task-icon-three > mat-icon{
   position: relative;
   top: 3px;
@@ -209,12 +210,27 @@ float: left;
   top: 5px;
   left: 5px;
 }
+
 .task-add.three{
   background: #98d6cc;
 }
+
 .slide.slide-three {
   background: #49c2af;
 }
+
 .content.three {
   background: #54b7a7;
+}
+
+.back {
+  background: #e6dbdb17;
+  width: 81px;
+  height: 145px;
+  top: 248px;
+  position: absolute;
+  transform: rotate(
+-35deg
+);
+  left: 20px;
 }

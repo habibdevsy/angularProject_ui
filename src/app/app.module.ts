@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { SliderComponent } from './slider/slider.component';
+import { DateTabsComponent } from './date-tabs/date-tabs.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { SliderComponent } from './slider/slider.component';
     NotificationComponent,
     PhotoComponent,
     SearchComponent,
-    SliderComponent
+    SliderComponent,
+    DateTabsComponent
   ],
   imports: [
     BrowserModule,
