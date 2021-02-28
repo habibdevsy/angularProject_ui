@@ -1,32 +1,70 @@
-<div class="row">
-    <div class="navbar">
-        <div class="menu">
-            <app-menu></app-menu>
-        </div>
-        <div class="notification">
-            <app-notification></app-notification>
-        </div>
-        <div class="photo">
-            <app-photo></app-photo>
-        </div>
-    </div> 
-</div>
+<div class="basic-container">
 
-<div class="row">
-    <app-title></app-title>
-</div>
+    <mat-tab-group mat-stretch-tabs>
+        <mat-tab label="Tab 1">
+            <ng-template mat-tab-label>
+                <mat-icon>home</mat-icon>
+            </ng-template>
+            <div class="row">
+                <div class="navbar">
+                    <div class="menu">
+                        <app-menu></app-menu>
+                    </div>
+                    <div class="notification">
+                        <app-notification></app-notification>
+                    </div>
+                    <div class="photo">
+                        <app-photo></app-photo>
+                    </div>
+                </div> 
+            </div>
 
-<div class="row">
-    <app-search></app-search>
-</div>
+            <div class="row">
+                <app-title></app-title>
+            </div>
 
-<div class="row">
-    <app-slider></app-slider>
-</div>
+            <div class="row">
+                <app-search></app-search>
+            </div>
 
-<div class="row">
-    <app-date-tabs></app-date-tabs>
-</div>
+            <div class="row">
+                <app-slider></app-slider>
+            </div>
 
+            <div class="row">
+                <app-date-tabs></app-date-tabs>
+            </div>  
+
+        </mat-tab>
+
+        <mat-tab label="Tab 2">
+            <div  class="colorful">
+                <ng-template mat-tab-label>
+                    <mat-icon>list</mat-icon>
+                </ng-template>
+                <div class="row">
+                    <div class="navbar">
+                        <div class="menu white">
+                            <app-menu></app-menu>
+                        </div>
+                        <div class="notification white">
+                            <app-notification></app-notification>
+                        </div>
+                        <div class="photo">
+                            <app-photo></app-photo>
+                        </div>
+                    </div> 
+
+                    <app-task></app-task>
+                </div>
+            </div>
+        </mat-tab>
+
+        <mat-tab label="Tab 3">
+            <p>Content for tab #3 goes here</p>
+        </mat-tab>
+    </mat-tab-group>
+
+</div>
 
 <!-- <router-outlet></router-outlet> -->

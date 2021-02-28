@@ -2,12 +2,12 @@
   box-sizing: border-box;
 }
 .row{
-  margin: 18px 13px;
+  margin: 13px 13px;
 }
 .navbar{
     height: auto;
     overflow: hidden;
-    margin-top: 33px;
+    // margin-top: 33px;
 }
 .navbar .menu{
   float: left;
@@ -21,4 +21,10 @@
   float: left;
   width: 13%;
   margin: 0px -4px;
+}
+.colorful{
+  width: 100%;
+  background: #7a87fa;
+  height: 100%;
+  
 }

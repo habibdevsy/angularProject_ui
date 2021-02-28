@@ -12,6 +12,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { SliderComponent } from './slider/slider.component';
 import { DateTabsComponent } from './date-tabs/date-tabs.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { TaskComponent } from './task/task.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,13 +24,16 @@ import { DateTabsComponent } from './date-tabs/date-tabs.component';
     PhotoComponent,
     SearchComponent,
     SliderComponent,
-    DateTabsComponent
+    DateTabsComponent,
+    TabsComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

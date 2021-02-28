@@ -1,0 +1,29 @@
+*{box-sizing: border-box;}
+.calender{
+    font-family:sans-serif;
+    margin-top: 19px;
+}
+.yearMonth{
+    color: #ffffff;
+}
+
+
+.yearMonth > mat-icon{
+    background: #a5b0fb;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 21px;
+    text-align: center;
+    height: 17px;
+    top: 7px;
+    position: relative;
+}
+.yearMonth > span{
+   float:left;
+}
+.days{
+
+}
+.day{
+
+}
