@@ -1,4 +1,4 @@
-<div class="basic-container">
+<!-- <div class="basic-container">
 
     <mat-tab-group mat-stretch-tabs>
         <mat-tab label="Tab 1">
@@ -65,6 +65,66 @@
         </mat-tab>
     </mat-tab-group>
 
-</div>
+</div> -->
 
 <!-- <router-outlet></router-outlet> -->
+<!-- start tabs -->
+<div class="tabs">
+    <div class="tab1" (click)="show(1)">
+        <mat-icon>home</mat-icon>
+    </div>
+    <div class="tab2" (click)="show(2)">
+        <mat-icon>list</mat-icon></div>
+    <div class="tab3" (click)="show(3)">
+        <mat-icon>list</mat-icon> </div>
+</div>
+<!-- end tabs -->
+
+    <div class="row" [ngClass]="(tab1 == 0)?'hidden':'visible' ">
+            <div class="navbar">
+                <div class="menu">
+                    <app-menu></app-menu>
+                </div>
+                <div class="notification">
+                    <app-notification></app-notification>
+                </div>
+                <div class="photo">
+                    <app-photo></app-photo>
+                </div>
+            </div> 
+            <div class="row">
+                <app-title></app-title>
+            </div>
+
+            <div class="row">
+                <app-search></app-search>
+            </div>
+
+            <div class="row">
+                <app-slider></app-slider>
+            </div>
+
+            <div class="row">
+                <app-date-tabs></app-date-tabs>
+            </div>  
+    </div>
+<div [ngClass]="(tab2 == 0)?'hidden':'visible' ">
+    <div class="row" >
+        <div class="navbar">
+            <div class="menu">
+                <app-menu></app-menu>
+            </div>
+            <div class="notification">
+                <app-notification></app-notification>
+            </div>
+            <div class="photo">
+                <app-photo></app-photo>
+            </div>
+        </div> 
+
+        <app-task></app-task>
+    </div>
+</div>
+<div class="content" [ngClass]="(tab3 == 0)?'hidden':'visible' ">
+
+</div>

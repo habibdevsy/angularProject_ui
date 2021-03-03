@@ -22,9 +22,42 @@
   width: 13%;
   margin: 0px -4px;
 }
-.colorful{
-  width: 100%;
-  background: #7a87fa;
-  height: 100%;
+// .colorful{
+//   width: 100%;
+//   background: #7a87fa;
+//   height: 100%;
   
+// }
+
+.hidden{
+  // visibility: hidden;
+  display: none;
+}
+
+.visible{
+  // visibility: visible;
+  display: unset;
+}
+
+.tab1, .tab2, .tab3{
+  float: left;
+  /* margin-left: 43px; */
+  text-align: center;
+  position: relative;
+  top: 5px;
+  /* padding: 5px; */
+  width: 33%;
+  cursor: pointer;
+}
+.tab1:hover, .tab2:hover, .tab3 :hover{
+  color: red
+}
+
+.tabs {
+  width: 100%;
+  background: white;
+  height: 53px;
+  position:absolute;
+  bottom: 0px;
+  z-index: 1000;
 }
