@@ -1,0 +1,32 @@
+<div class="slide" [ngStyle]="{'background-color': cardColor}" (click)="onCardClicked(123)">
+    <div class="slide-content">
+        <div class="back"></div>
+        <div class="task-icon">
+            <mat-icon aria-label="phone">phone_iphone</mat-icon>
+        </div>
+        <div class="task-count">
+            <span>24 task</span>
+        </div>
+        <div class="task-title">
+            <span>{{title}}</span>
+        </div>
+        <div class="content one">
+            <div class="task-person-photo">
+                <ul>
+                    <li>
+                        <img src="../../assets/image.jpg">
+                    </li>
+                    <li>
+                        <img src="../../assets/image.jpg">
+                    </li>
+                    <li class="task-more">
+                        <span>4+</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="task-add">
+                <span>+</span>
+            </div>
+        </div>
+    </div>
+</div>

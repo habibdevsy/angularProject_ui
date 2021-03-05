@@ -12,4 +12,7 @@ export class SliderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  fetchNewData(args: string): void {
+    alert('ID ' + args);
+  }
 }
