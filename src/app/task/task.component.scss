@@ -5,6 +5,8 @@
 }
 .yearMonth{
     color: #ffffff;
+    position: relative;
+    left: 7%;
 }
 
 .yearMonth > mat-icon{
@@ -14,15 +16,47 @@
     font-size: 21px;
     text-align: center;
     height: 17px;
-    top: 7px;
+    top: 2px;
     position: relative;
 }
 .yearMonth > span{
    float:left;
 }
 .days{
+    position: relative;
+    left: 2%;
 
 }
 .day{
+    float: left;
+    float: left;
+    background-color: #a0a9fb;
+    padding: 9px;
+    width: 21%;
+    margin: 5px;
+    text-align: center;
+    border-radius: 12px;
+    height: 83px;
+    color: white;
+}
 
+.day p {
+    position: relative;
+    top: 13%;
+}
+p.number {
+    font-size: 29px;
+}
+.active{
+    background: white;
+    color:black;
+}
+.back{
+    background: #ffffff0d;
+    width: 81px;
+    height: 145px;
+    top: -50px;
+    position: absolute;
+    transform: rotate(-35deg);
+    left: 150px;
 }

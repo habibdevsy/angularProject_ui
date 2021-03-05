@@ -1,13 +1,13 @@
 *{
   box-sizing: border-box;
 }
-.row{
-  margin: 13px 13px;
+.one{
+  margin: 0px 16px;
 }
 .navbar{
     height: auto;
     overflow: hidden;
-    // margin-top: 33px;
+    margin: 15px 18px 0 18px;
 }
 .navbar .menu{
   float: left;
@@ -22,35 +22,23 @@
   width: 13%;
   margin: 0px -4px;
 }
-// .colorful{
-//   width: 100%;
-//   background: #7a87fa;
-//   height: 100%;
-  
-// }
 
 .hidden{
-  // visibility: hidden;
   display: none;
+  
 }
 
 .visible{
-  // visibility: visible;
   display: unset;
 }
 
 .tab1, .tab2, .tab3{
   float: left;
-  /* margin-left: 43px; */
   text-align: center;
   position: relative;
   top: 5px;
-  /* padding: 5px; */
   width: 33%;
   cursor: pointer;
-}
-.tab1:hover, .tab2:hover, .tab3 :hover{
-  color: red
 }
 
 .tabs {
@@ -60,4 +48,19 @@
   position:absolute;
   bottom: 0px;
   z-index: 1000;
+}
+.taskTop{
+  background: #7280fb;
+  overflow: hidden;
+  height: 230px;
+}
+.taskBottom{
+  background: #fdfdfd;
+  position: relative;
+  top: -28px;
+  border-top-left-radius: 33px;
+  border-top-right-radius: 33px;
+}
+app-notification .mat-icon{
+  color :white !important;
 }

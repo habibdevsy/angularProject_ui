@@ -7,10 +7,11 @@ import {TitleComponent} from './title/title.component';
 })
 export class AppComponent {
   title = 'pro';
-  active = 0;
   tab1 = 1;
   tab2 = 0;
   tab3 = 0;
+  color = 'red';
+  colorEmp = '';
 
   show(n:number) {
     if (n == 1) { 

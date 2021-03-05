@@ -1,0 +1,77 @@
+.title{
+    width:100%; 
+    position: relative;
+    top: 21px; 
+    margin-bottom: 51px;
+  }
+
+.project{
+    width: 85%;
+    font-size: 20px;
+    position: relative;
+    left: 4%;
+  }
+  .more-icon{
+    width: 15%;
+    color: #9e9e9e;
+    position: relative;
+    left: 70%;
+  }
+
+  .main-container{
+    position: relative;
+    width: 500px;
+}
+/*creating line for timeline*/
+.main-container::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5%;
+  margin-left: -3px;
+  border: 1px dashed #9e9e9e;
+}
+/*Adjusting box of all content*/
+.text-wrapper{
+    padding: 10px 40px;
+    position: relative;
+    width:51%;
+    box-sizing: border-box;
+    margin: 16px 0;
+}
+.text-wrapper::after{
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -10px;
+  background-color: #1dad1e;
+  top: 0;
+  border-radius: 50%;
+  z-index: 1;
+  left: 6%;
+  bottom: 0;
+}
+
+/*content box colour padding and radius for circular corner*/
+.content{
+  line-height: 0px;
+}
+/*setting text property of event heading*/
+.content h3{
+    font-size: 14px;
+    color: #212121;
+    letter-spacing:1px;
+    color: #212121;
+}
+.content h3> span{
+  position: absolute;
+  left: 91%;
+  top: 10px;
+}
+/*setting text property of event content*/
+.content p{
+    color: #616161;
+    margin-top: 2px;
+}

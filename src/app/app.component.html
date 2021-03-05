@@ -1,81 +1,12 @@
-<!-- <div class="basic-container">
-
-    <mat-tab-group mat-stretch-tabs>
-        <mat-tab label="Tab 1">
-            <ng-template mat-tab-label>
-                <mat-icon>home</mat-icon>
-            </ng-template>
-            <div class="row">
-                <div class="navbar">
-                    <div class="menu">
-                        <app-menu></app-menu>
-                    </div>
-                    <div class="notification">
-                        <app-notification></app-notification>
-                    </div>
-                    <div class="photo">
-                        <app-photo></app-photo>
-                    </div>
-                </div> 
-            </div>
-
-            <div class="row">
-                <app-title></app-title>
-            </div>
-
-            <div class="row">
-                <app-search></app-search>
-            </div>
-
-            <div class="row">
-                <app-slider></app-slider>
-            </div>
-
-            <div class="row">
-                <app-date-tabs></app-date-tabs>
-            </div>  
-
-        </mat-tab>
-
-        <mat-tab label="Tab 2">
-            <div  class="colorful">
-                <ng-template mat-tab-label>
-                    <mat-icon>list</mat-icon>
-                </ng-template>
-                <div class="row">
-                    <div class="navbar">
-                        <div class="menu white">
-                            <app-menu></app-menu>
-                        </div>
-                        <div class="notification white">
-                            <app-notification></app-notification>
-                        </div>
-                        <div class="photo">
-                            <app-photo></app-photo>
-                        </div>
-                    </div> 
-
-                    <app-task></app-task>
-                </div>
-            </div>
-        </mat-tab>
-
-        <mat-tab label="Tab 3">
-            <p>Content for tab #3 goes here</p>
-        </mat-tab>
-    </mat-tab-group>
-
-</div> -->
-
 <!-- <router-outlet></router-outlet> -->
 <!-- start tabs -->
 <div class="tabs">
-    <div class="tab1" (click)="show(1)">
+    <div class="tab1" (click)="show(1)" [style.color]="(tab1 == 0) ? colorEmp : color">
         <mat-icon>home</mat-icon>
     </div>
-    <div class="tab2" (click)="show(2)">
+    <div class="tab2" (click)="show(2)" [style.color]="(tab2== 0) ? colorEmp : color">
         <mat-icon>list</mat-icon></div>
-    <div class="tab3" (click)="show(3)">
+    <div class="tab3" (click)="show(3)" [style.color]="(tab3 == 0) ? colorEmp : color">
         <mat-icon>list</mat-icon> </div>
 </div>
 <!-- end tabs -->
@@ -92,24 +23,24 @@
                     <app-photo></app-photo>
                 </div>
             </div> 
-            <div class="row">
+            <div class="row one">
                 <app-title></app-title>
             </div>
 
-            <div class="row">
+            <div class="row one">
                 <app-search></app-search>
             </div>
 
-            <div class="row">
+            <div class="row one">
                 <app-slider></app-slider>
             </div>
 
-            <div class="row">
+            <div class="row one">
                 <app-date-tabs></app-date-tabs>
             </div>  
     </div>
 <div [ngClass]="(tab2 == 0)?'hidden':'visible' ">
-    <div class="row" >
+    <div class="row taskTop" >
         <div class="navbar">
             <div class="menu">
                 <app-menu></app-menu>
@@ -123,6 +54,9 @@
         </div> 
 
         <app-task></app-task>
+    </div>
+    <div class="row taskBottom" >
+        <app-tabs></app-tabs>
     </div>
 </div>
 <div class="content" [ngClass]="(tab3 == 0)?'hidden':'visible' ">
