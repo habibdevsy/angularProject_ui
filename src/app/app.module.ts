@@ -15,6 +15,8 @@ import { DateTabsComponent } from './date-tabs/date-tabs.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { TaskComponent } from './task/task.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,9 @@ import { TaskComponent } from './task/task.component';
     SliderComponent,
     DateTabsComponent,
     TabsComponent,
-    TaskComponent
+    TaskComponent,
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
