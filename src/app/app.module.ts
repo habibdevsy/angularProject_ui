@@ -17,6 +17,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { TaskComponent } from './task/task.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SlideContentComponent } from './slide-content/slide-content.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     TabsComponent,
     TaskComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    SlideContentComponent
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,6 @@ float: left;
   width:15%;
   color:#9e9e9e;
 }
-
 .slider {
     width: 100%;
     height: 140px;
@@ -22,20 +21,14 @@ float: left;
     -webkit-overflow-scrolling: touch;
     padding: 5px;
   }
-
   .slide {
     width: 100px;
     flex-shrink: 0;
     margin-left: 20px;
     border-radius: 15px;
+    background: #7482fb;
   }
-
-  .slide-content{
-    margin-top:5px;
-    margin-left: 7px;
-  }
-  
-  .task-icon{
+  .icon{
     background: #a5b0fb;
     width: 28px;
     border-radius: 5px;
@@ -44,191 +37,8 @@ float: left;
     top: 5px;
     left: 5px;
   }
-
-  .task-icon > mat-icon{
+  .icon > mat-icon{
     position: relative;
     top: 3px;
     color:#dbe0fa;
   }
-
-  .task-count{
-    margin-top: 15px;
-    font-size: 12px;
-    margin-left: 5px;
-    color:#fbfbfb;
-
-  }
-
-  .task-title{
-    margin-top: 1px;
-    font-size: 15px;
-    margin-left: 5px;
-    color:#fbfbfb;
-    margin-bottom: 5px;
-  }
-
-  .task-person-photo{
-    position: relative;
-    left: -5%;
-    width: 95px;
-    top: 6px;
-  }
-
-  .task-more{
-    background: #fbfbfb;;
-    border-radius: 50%;
-    text-align: center;
-  }
-
-  .task-more > span{
-    color: #7482fbc9;
-  }
-
-  .task-add{
-    // left: 50%;
-    // position: relative;
-    // background: #9ea7ea;
-    // color: #fff;
-    // text-align: center;
-    // border-radius: 50%;
-    left: 66%;
-    position: relative;
-    background: #9ea7ea;
-    color: #fff;
-    text-align: center;
-    border-radius: 50%;
-    width: 30px;
-    top: -36px;
-    height: 30px;
-  }
-
-  .task-add > span{
-    border-radius: 50%;
-    top: 5px;
-    position: relative;
-  }
-
-  ul{
-    list-style: none;
-    display: flex;
-    position: relative;
-    left: -36%;
-  }
-
-  ul > li > img, ul > li > span{
-    border-radius: 50%;
-    width:20px;
-    height:20px;
-  }
-  ul > li {
-    width: 29px;
-    /* padding: 3px; */
-    margin-right: -15px;
-  }
-
-  .slide-one {
-    background: #7482fb;
-  }
-
-  .slide-tow {
-    background: #fc9292;
-  }
-
-.content {
-  // background: #6c79f5;
-  width: 100px;
-  position: relative;
-  left: -7px;
-  height: 49px;
-  border-bottom-left-radius: 17px;
-  border-bottom-right-radius: 17px;
-  top: -5px;
-  height: 40px;
-}
-.one{
-  background: #6c79f5;
-}
-.tow{
-  background: #fb7f7f;
-}
-
-.task-icon-tow{
-  position: relative;
-  top: 3px;
-  color:#dbe0fa;
-}
-.task-icon-tow > mat-icon{
-  position: relative;
-  top: 3px;
-  color:#f9f9f9;
-}
-
-.task-icon.task-icon-tow{
-  background: #f3c1c1;
-  width: 28px;
-  border-radius: 5px;
-  /* margin-bottom: 5px; */
-  /* margin-top: 11px; */
-  text-align: center;
-  position: relative;
-  top: 5px;
-  left: 5px;
-}
-.task-add.tow{
-  background: #efafaf;
-}
-
-
-
-
-.three{
-  background: #fb7f7f;
-}
-
-.task-icon-three{
-  position: relative;
-  top: 3px;
-  color:#dbe0fa;
-}
-
-.task-icon-three > mat-icon{
-  position: relative;
-  top: 3px;
-  color:#f9f9f9;
-}
-
-.task-icon.task-icon-three{
-  background: #9bded4;
-  width: 28px;
-  border-radius: 5px;
-  /* margin-bottom: 5px; */
-  /* margin-top: 11px; */
-  text-align: center;
-  position: relative;
-  top: 5px;
-  left: 5px;
-}
-
-.task-add.three{
-  background: #98d6cc;
-}
-
-.slide.slide-three {
-  background: #49c2af;
-}
-
-.content.three {
-  background: #54b7a7;
-}
-
-.back {
-  background: #e6dbdb17;
-  width: 81px;
-  height: 145px;
-  top: 248px;
-  position: absolute;
-  transform: rotate(
--35deg
-);
-  left: 20px;
-}

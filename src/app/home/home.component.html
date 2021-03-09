@@ -1,5 +1,6 @@
 <!-- start tabs -->
 <div class="tabs">
+
     <div class="tab1" (click)="show(1)" [style.color]="(tab1 == 0) ? colorEmp : color">
         <mat-icon>home</mat-icon>
     </div>
@@ -7,29 +8,23 @@
         <mat-icon>list</mat-icon></div>
     <div class="tab3" (click)="show(3)" [style.color]="(tab3 == 0) ? colorEmp : color">
         <mat-icon>list</mat-icon> </div>
+
 </div>
 <!-- end tabs -->
 
-    <div class="row" [ngClass]="(tab1 == 0)?'hidden':'visible' ">
+<div class="row" [ngClass]="(tab1 == 0)?'hidden':'visible' ">
           
-            <app-navbar></app-navbar>
+    <app-navbar></app-navbar>
                
-            <div class="row one">
-                <app-title></app-title>
-            </div>
+    <div class="row one">
+        <app-title></app-title>
+        <app-search></app-search>
+        <app-slider></app-slider>
+        <app-date-tabs></app-date-tabs>
+    </div>  
 
-            <div class="row one">
-                <app-search></app-search>
-            </div>
+</div>
 
-            <div class="row one">
-                <app-slider></app-slider>
-            </div>
-
-            <div class="row one">
-                <app-date-tabs></app-date-tabs>
-            </div>  
-    </div>
 <div [ngClass]="(tab2 == 0)?'hidden':'visible' ">
     <div class="row taskTop" >
         <app-navbar></app-navbar>
@@ -40,6 +35,7 @@
         <app-tabs></app-tabs>
     </div>
 </div>
+
 <div class="content" [ngClass]="(tab3 == 0)?'hidden':'visible' ">
 
 </div>
