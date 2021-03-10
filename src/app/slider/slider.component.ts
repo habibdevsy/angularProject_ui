@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slider.component.scss']
 })
 export class SliderComponent implements OnInit {
-s=['aa','bb','cc'];
-  constructor() { }
+slideColor=['#7482fb','#fd7581','#4db183'];
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
   }
-
 }
