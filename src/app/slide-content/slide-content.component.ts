@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slide-content.component.scss']
 })
 export class SlideContentComponent implements OnInit {
-
+task="task";
   constructor() { }
 
   ngOnInit(): void {

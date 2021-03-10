@@ -14,12 +14,13 @@ float: left;
   color:#9e9e9e;
 }
 .slider {
-    width: 100%;
-    height: 140px;
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding: 5px;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: 5px;
+  overflow-x: auto;
   }
   .slide {
     width: 100px;
