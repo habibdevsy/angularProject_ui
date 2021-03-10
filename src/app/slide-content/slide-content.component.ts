@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-slide-content',
@@ -9,9 +9,13 @@ export class SlideContentComponent implements OnInit {
 @Input() task="36 task";
 @Input() titleTask=['app design','dashboard','test'];
 
+@Output() whenClicked=new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  onCardClicked(id: number): void {
+    this.whenClicked.emit('' + id);
+  }
 }

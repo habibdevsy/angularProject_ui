@@ -13,4 +13,8 @@ slideColor=['#7482fb','#fd7581','#4db183'];
 
   ngOnInit(): void {
   }
+
+  fetchData(args:string) {
+    alert("ID"+args);
+  }
 }
