@@ -11,11 +11,10 @@
     <div class="slider">
         <div class="slide" *ngFor="let i of slideColor" [ngStyle]="{'background': i}">
            <div class="slide-content"> 
-            
                 <div class="icon" [ngStyle]="{'background': '#ceced652'}">
                     <mat-icon aria-label="phone">phone_iphone</mat-icon>
                 </div>
-                <app-slide-content></app-slide-content>
+                <app-slide-content task="50 tasks"></app-slide-content>
             </div>
         </div>
     </div>
