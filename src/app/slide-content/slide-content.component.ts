@@ -9,13 +9,13 @@ export class SlideContentComponent implements OnInit {
 @Input() task="36 task";
 @Input() titleTask=['app design','dashboard','test'];
 
-@Output() whenClicked=new EventEmitter<string>();
-
+@Output() whenClicked=new EventEmitter<number>();
   constructor() { }
 
   ngOnInit(): void {
   }
   onCardClicked(id: number): void {
-    this.whenClicked.emit('' + id);
+    this.whenClicked.emit(111);
+    console.log("test",this.whenClicked.emit(111));
   }
 }
