@@ -16,6 +16,5 @@ slideColor=['#7482fb','#fd7581','#4db183'];
 
   fetchData(args:any):void {
     alert("ID"+args);
-    console.log("ID"+args);
   }
 }

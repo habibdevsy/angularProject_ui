@@ -15,7 +15,6 @@ export class SlideContentComponent implements OnInit {
   ngOnInit(): void {
   }
   onCardClicked(id: number): void {
-    this.whenClicked.emit(111);
-    console.log("test",this.whenClicked.emit(111));
+    this.whenClicked.emit(id);
   }
 }
