@@ -8,7 +8,16 @@ import { TitleComponent } from './title/title.component';
 import { NotificationComponent } from './notification/notification.component';
 import { PhotoComponent } from './photo/photo.component';
 import { SearchComponent } from './search/search.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import { SliderComponent } from './slider/slider.component';
+import { DateTabsComponent } from './date-tabs/date-tabs.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { TaskComponent } from './task/task.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SlideContentComponent } from './slide-content/slide-content.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,10 +26,20 @@ import { SearchComponent } from './search/search.component';
     NotificationComponent,
     PhotoComponent,
     SearchComponent,
+    SliderComponent,
+    DateTabsComponent,
+    TabsComponent,
+    TaskComponent,
+    HomeComponent,
+    NavbarComponent,
+    SlideContentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

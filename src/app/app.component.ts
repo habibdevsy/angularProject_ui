@@ -6,5 +6,5 @@ import {TitleComponent} from './title/title.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pro';
+ 
 }

@@ -1,0 +1,21 @@
+<div>
+    <div class="title">
+        <div class="project">
+            <span>Project</span>
+        </div>
+        <div class="more-icon">
+           <mat-icon aria-label="more_horiz">more_horiz</mat-icon>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="slide" *ngFor="let i of slideColor" [ngStyle]="{'background': i}" 
+        >
+           <div class="slide-content"> 
+                <div class="icon" [ngStyle]="{'background': '#ceced652'}">
+                    <mat-icon aria-label="phone">phone_iphone</mat-icon>
+                </div>
+                <app-slide-content task="50 tasks" (whenClicked)="fetchData($event)"></app-slide-content>
+            </div>
+        </div>
+    </div>

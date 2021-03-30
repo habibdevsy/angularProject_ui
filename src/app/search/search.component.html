@@ -1,4 +1,11 @@
-<div>
-    <!-- <span>icon</span> -->
-    <input type="input" placeholder="Search Task">
+<div class="search"> 
+    <div class="btn-search" (click)="search()">
+        <mat-icon aria-label="search">search</mat-icon>
+    </div> 
+    <div class="btn-input">
+        <input type="input" placeholder="Search Task">
+    </div>
+    <div class="voice-search" (click)="voiceSearch()">
+        <mat-icon aria-label="voice-search">keyboard_voice</mat-icon>
+    </div>
 </div>

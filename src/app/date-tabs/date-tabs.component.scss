@@ -1,0 +1,63 @@
+.tabs {
+    width: 200px;
+    overflow: hidden;
+    border: 1px solid #ffffff00;
+    display: flex;
+}
+
+// button.tabLinks {
+//     width: 100%;
+//     outline: none;
+//     padding: 5px 16px;
+//     border: 0;
+//     background: #ff000000;
+//     margin: 0px 2px;
+// }
+
+.tabContent{
+
+}
+
+.tabContent{
+    position: relative;
+    top: 5px;
+    left: 5%;
+    margin-top: 9px;
+}
+.tabContent > .icon{
+    color: #33bb38;
+}
+.content{
+    position: relative;
+    top: -27px;
+    left: 36px;
+}
+span.time {
+    margin-left: 19px;
+}
+span.content-top {
+    font-size: 18px;
+}
+
+span.content-bottom {
+    position: relative;
+    top: 3px;
+}
+
+.tabLinks{
+    outline: none;
+    padding: 5px 16px;
+    border: 0;
+    background: #ff000000;
+    margin: 0px 2px;
+    display: inline-block;
+    background-image: linear-gradient(to right, #F16A70, #F16A70);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 0 2px;
+    transition: background-size 0.5s ease;
+}
+.tabLinks:hover {
+    background-size: 50% 2px;
+    font-weight: bold;
+}
